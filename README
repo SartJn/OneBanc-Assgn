@@ -1,0 +1,60 @@
+Hi! I am Sarthak Jain.
+AI enthusiast wanting to make data humane.
+Below you will find detailed information of what I did in the coding part.
+Hope you find this information helpful.
+
+Overview
+This Python application helps users create stronger Mobile Personal Identification Numbers (MPINs) by analyzing their security and potential weaknesses.
+
+Purpose
+Many people create PINs that are easy to guess, which can compromise their mobile banking security. This tool helps identify weak PINs by checking against two main criteria:
+1.Common weak PIN patterns
+2.Personal demographic information
+
+Features
+PIN Weakness Detection
+The validator checks for weak PINs in two ways:
+1. Common PIN Patterns
+Identifies frequently used, predictable PIN combinations
+Checks against a predefined list of weak 4-digit and 6-digit PINs
+Examples of weak PINs:
+1234
+0000
+1111
+123456
+2. Demographic-based Weakness
+Checks if the PIN contains patterns related to personal information:
+1.Date of Birth (Self)
+2.Spouse's Date of Birth
+3.Wedding Anniversary
+
+How It Works
+PIN Strength Evaluation
+Input: 4 or 6-digit PIN
+Optional: User demographic information
+Output:
+    Strength: STRONG or WEAK
+    Reasons for weakness (if applicable)
+
+Weakness Reasons
+If a PIN is considered weak, the tool provides specific reasons:
+1.COMMONLY_USED: PIN is in the list of frequently used weak PINs
+2.DEMOGRAPHIC_DOB_SELF: PIN contains patterns from user's birth date
+3.DEMOGRAPHIC_DOB_SPOUSE: PIN contains patterns from spouse's birth date
+4.DEMOGRAPHIC_ANNIVERSARY: PIN contains patterns from wedding anniversary
+
+Usage Modes
+1. Comprehensive Testing
+Runs a set of predefined test cases
+Validates the validator's logic across various scenarios
+2. Interactive Checker
+Allows manual PIN strength checking
+Supports entering demographic information
+Provides real-time PIN strength analysis
+
+How to Run
+1.Ensure Python 3.7+ is installed
+2.Run the script
+3.Choose between:
+    1.Comprehensive testing
+    2.Interactive PIN checking
